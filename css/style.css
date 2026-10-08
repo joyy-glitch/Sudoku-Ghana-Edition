@@ -68,3 +68,69 @@ button {
     background-color: #eee;
     color: #888;
 }
+
+#board {
+    display: grid;
+    width: fit-content;
+    margin: 20px auto;
+    border: 3px solid #333;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.cell img {
+    width: 44px;
+    height: 44px;
+}
+
+.given {
+    background-color: #efe6d2;
+    cursor: default;
+}
+
+.wrong {
+    background-color: #f6c9c9;
+}
+
+.box-right {
+    border-right: 3px solid #333;
+}
+
+.box-bottom {
+    border-bottom: 3px solid #333;
+}
+
+#palette {
+    text-align: center;
+}
+
+.palette-btn {
+    width: 80px;
+    margin: 4px;
+    padding: 6px;
+    background-color: white;
+    color: #333;
+    border: 2px solid #ccc;
+    font-size: 11px;
+}
+
+.palette-btn img {
+    width: 36px;
+    height: 36px;
+}
+
+.palette-btn.selected {
+    border-color: #c8961e;
+    background-color: #fff6df;
+}
