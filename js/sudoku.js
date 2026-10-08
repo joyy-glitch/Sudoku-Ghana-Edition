@@ -7,6 +7,7 @@ let puzzle = [];
 let grid = [];
 let selected = 1;
 let finished = false;
+let showNumbers = false;
 
 function makeEmpty() {
     let g = [];
@@ -136,7 +137,12 @@ function makePuzzle() {
 
 function symbolImage(n) {
     let s = symbols[n - 1];
-    return '<img src="images/symbols/' + s.image + '" alt="' + s.name + '" title="' + s.name + '">';
+    let html = "";
+    if (showNumbers) {
+        html = '<span class="num">' + n + '</span>';
+    }
+    html += '<img src="images/symbols/' + s.image + '" alt="' + s.name + '" title="' + s.name + '">';
+    return html;
 }
 
 function drawBoard() {
@@ -250,3 +256,9 @@ function saveGame() {
 makePuzzle();
 drawBoard();
 drawPalette();
+
+document.getElementById("showNumbers").onchange = function () {
+    showNumbers = this.checked;
+    drawBoard();
+    drawPalette();
+};

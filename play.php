@@ -59,7 +59,9 @@ $stmt->close();
     <div class="box wide">
         <h1>Level <?php echo $level; ?></h1>
         <p>Pick a symbol, then click an empty square. Each row, column and box must have every symbol once.</p>
-
+        <label class="toggle">
+            <input type="checkbox" id="showNumbers"> Show numbers
+       </label>
         <div id="board"></div>
         <div id="palette"></div>
         <p id="message"></p>
