@@ -17,7 +17,7 @@ if (!isset($_SESSION["user_id"])) {
         <h1>Akwaaba, <?php echo htmlspecialchars($_SESSION["name"]); ?>!</h1>
 
         <?php if ($_SESSION["role"] == "child") { ?>
-            <p>Your puzzles and symbols will appear here.</p>
+            <p><a href="learn.php">My Symbols</a> | <a href="play.php">Play</a></p>
         <?php } else { ?>
             <p>Your classes will appear here.</p>
         <?php } ?>

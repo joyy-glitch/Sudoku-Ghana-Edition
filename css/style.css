@@ -40,3 +40,31 @@ button {
 .message {
     color: #a33;
 }
+
+.wide {
+    max-width: 650px;
+}
+
+.symbol-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.symbol-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.symbol-card h3 {
+    margin: 0;
+}
+
+.locked {
+    background-color: #eee;
+    color: #888;
+}
